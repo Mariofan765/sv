@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-body);
+  font-weight: 400;
+  line-height: 1.6;
+  color: #334036;
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cpolygon points='2,2 16.4,19.6 19.6,16.4' fill='%23334036'/%3E%3Cline x1='4.5' y1='4.5' x2='16.5' y2='16.5' stroke='%23f5f0e8' stroke-width='0.6' opacity='0.35'/%3E%3Cline x1='14.5' y1='21.5' x2='21.5' y2='14.5' stroke='%238a6d3b' stroke-width='2.5' stroke-linecap='round'/%3E%3Ccircle cx='14.5' cy='21.5' r='1.3' fill='%238a6d3b'/%3E%3Ccircle cx='21.5' cy='14.5' r='1.3' fill='%238a6d3b'/%3E%3Cline x1='19' y1='19' x2='24.5' y2='24.5' stroke='%235a3e2b' stroke-width='2.5' stroke-linecap='round'/%3E%3Ccircle cx='25.5' cy='25.5' r='2.5' fill='%238a6d3b'/%3E%3C/svg%3E") 2 2, auto;
+}
+
+:root {
+    --font-heading: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+    --font-body: Georgia, Times New Roman, serif;
+    --font-custom-body: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
+  }
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3f4e3c;
+  cursor: url("/cursors/cursor-sword.svg") 2 2, auto;
+}
