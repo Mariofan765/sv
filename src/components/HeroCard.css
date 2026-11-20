@@ -1,0 +1,25 @@
+.hero-card {
+  background: var(--block-color) ;
+  place-items: center;
+  width: 90%;
+  margin: 7vh auto 0;
+  display: grid;
+  overflow: hidden;
+}
+
+.hero-card:before {
+  content: "";
+  z-index: 0;
+  opacity: 0.2;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+  background: url(/paper-texture.svg) 0 0 / 270px 270px;
+}
+
+/*.hero-card:after {
+  content: "";
+  pointer-events: none;
+  border: 1px solid #8466373d;
+  position: absolute;
+  inset: 3.2%;
+}*/

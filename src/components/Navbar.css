@@ -5,8 +5,9 @@
     align-items: center;
     padding: 10px;
     background-color: #f1e5cd;
-    margin-top: 5px;
-    position: absolute;
+    margin-top: 1vh;
+    margin: 1vh auto;
+    position: fixed;
     top: 0;
     box-shadow: 0 8px 25px #1c231b38, inset 0 0 28px #805b2d14;
 }

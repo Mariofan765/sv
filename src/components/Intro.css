@@ -1,0 +1,70 @@
+.intro-section {
+  background-color: var(--block-color);
+  width: 90%;
+  
+}
+
+.intro-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.decorative-element {
+  display: block;
+  font-size: 2rem;
+  color: #d4a57a;
+  margin-bottom: 30px;
+}
+
+.intro-title {
+  font-size: 2rem;
+  color: #5d4e37;
+  margin-bottom: 25px;
+  font-weight: 400;
+}
+
+.intro-subtitle {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+.divider {
+  width: 60px;
+  height: 2px;
+  background-color: #d4a57a;
+  margin: 30px auto 40px;
+}
+
+.cta-box {
+  background-color: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.cta-heading {
+  font-size: 1.3rem;
+  color: #5d4e37;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.cta-text {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.8;
+}
+
+.intro-signature {
+  font-size: 1.2rem;
+  color: #8b7355;
+  font-style: italic;
+}
+
+.intro-content > * + * {
+  margin-top: 20px;
+}
