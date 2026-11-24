@@ -158,3 +158,81 @@
   font-size: 0.9rem;
   color: #8b7355;
 }
+
+/* Мобильная адаптация */
+@media (max-width: 768px) {
+    .rsvp-section {
+        width: 95%;
+    }
+
+    .rsvp-intro h2 {
+        font-size: 1.8rem;
+    }
+
+    .rsvp-intro p {
+        font-size: 0.95rem;
+    }
+
+    .rsvp-date {
+        padding: 12px 20px;
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .rsvp-form {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .form-group label {
+        font-size: 1rem;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 12px;
+        font-size: 0.95rem;
+    }
+
+    .radio-option {
+        padding: 12px;
+        font-size: 0.95rem;
+    }
+
+    .submit-btn {
+        padding: 16px;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .rsvp-intro h2 {
+        font-size: 1.5rem;
+    }
+
+    .rsvp-date {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+
+    .form-group label {
+        font-size: 0.95rem;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .radio-option {
+        padding: 10px;
+    }
+
+    .submit-btn {
+        padding: 14px;
+        font-size: 1rem;
+    }
+}

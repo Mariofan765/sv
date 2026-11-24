@@ -55,3 +55,47 @@
     border: 1px solid;
     padding: 5px 15px;
 }
+
+/* Мобильная адаптация */
+@media (max-width: 768px) {
+    .menu {
+        width: 95vw;
+        padding: 15px 10px;
+        margin: 0.5vh auto;
+    }
+
+    .left-menu {
+        font-size: 16px;
+        letter-spacing: 3px;
+    }
+
+    .right-menu {
+        gap: 15px;
+    }
+
+    .right-menu .btn:last-of-type {
+        padding: 4px 10px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu {
+        width: 98vw;
+        padding: 12px 8px;
+    }
+
+    .left-menu {
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+
+    .right-menu {
+        gap: 10px;
+    }
+
+    .right-menu .btn:last-of-type {
+        padding: 3px 8px;
+        font-size: 0.85rem;
+    }
+}

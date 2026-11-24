@@ -79,3 +79,57 @@
   display: inline-flex;
 }
 
+/* Мобильная адаптация */
+@media (max-width: 768px) {
+    .dress-code-section {
+        width: 95%;
+    }
+
+    .dress-code-intro h2 {
+        font-size: 1.8rem;
+    }
+
+    .color-palette h3 {
+        font-size: 1.7rem;
+    }
+
+    .palette-grid {
+        width: 95%;
+        gap: 12px;
+    }
+
+    .palette-color {
+        padding: 6px 12px;
+        font-size: 0.85rem;
+    }
+
+    .color-dot {
+        width: 14px;
+        height: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .dress-code-intro h2 {
+        font-size: 1.5rem;
+    }
+
+    .color-palette h3 {
+        font-size: 1.4rem;
+    }
+
+    .palette-grid {
+        gap: 10px;
+    }
+
+    .palette-color {
+        padding: 5px 10px;
+        font-size: 0.8rem;
+    }
+
+    .color-dot {
+        width: 12px;
+        height: 12px;
+    }
+}
+

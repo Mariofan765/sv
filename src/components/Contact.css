@@ -63,3 +63,64 @@
   color: #8b7355;
   font-weight: bold;
 }
+
+/* Мобильная адаптация */
+@media (max-width: 768px) {
+    .contact-section {
+        width: 95%;
+    }
+
+    .contact-intro h2 {
+        font-size: 1.8rem;
+    }
+
+    .contact-cards {
+        gap: 30px;
+    }
+
+    .contact-card {
+        max-width: 260px;
+        padding: 25px;
+    }
+
+    .contact-card img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .contact-info h3 {
+        font-size: 1.2rem;
+    }
+
+    .contact-info p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-intro h2 {
+        font-size: 1.5rem;
+    }
+
+    .contact-cards {
+        gap: 20px;
+    }
+
+    .contact-card {
+        max-width: 240px;
+        padding: 20px;
+    }
+
+    .contact-card img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .contact-info h3 {
+        font-size: 1.1rem;
+    }
+
+    .contact-info p {
+        font-size: 1rem;
+    }
+}

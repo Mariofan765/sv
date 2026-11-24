@@ -17,13 +17,13 @@ const Details = ({ countdownDays, countdownHours, countdownMinutes, countdownSec
   ];
 
   return (
-    <section id="details" className="details-section">
-      <div className="details-intro">
+    <section id="details" className="details-section medieval-details-section">
+      <div className="medieval-frame details-intro">
         <p>Когда и где</p>
         <h2>Детали нашего дня</h2>
       </div>
 
-      <div className="calendar-container">
+      <div className="medieval-frame calendar-container">
         <div className="calendar-header">
           <span>{calendarData.month}</span>
           <strong>{calendarData.year}</strong>
@@ -49,7 +49,7 @@ const Details = ({ countdownDays, countdownHours, countdownMinutes, countdownSec
         </div>
       </div>
 
-      <div className="countdown-container">
+      <div className="medieval-frame countdown-container">
         <p>До нашей свадьбы осталось</p>
         <h3>Обратный отсчёт до свадьбы</h3>
         <div className="countdown">
@@ -81,7 +81,7 @@ const Details = ({ countdownDays, countdownHours, countdownMinutes, countdownSec
           href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Свадьба%20Алексеея%20и%20Анны&dates=20270731T123000Z%2F20270731T200000Z&details=Сбор%20гостей%20в%2015%3A30.%20Начало%20церемонии%20в%2016%3A00.%20Обратный%20автобус%20отправляется%20в%2023%3A00%20до%20Памятника%20Славы.&location=Ресторан%20«Тулинов%20Дом»%2C%20Рамонь%2C%20Советская%20улица%2C%201"
           target="_blank"
           rel="noopener noreferrer"
-          className="calendar-btn google"
+          className="calendar-btn google medieval-btn"
         >
           Google Calendar
         </a>
@@ -93,7 +93,7 @@ const Details = ({ countdownDays, countdownHours, countdownMinutes, countdownSec
 
       <div className="schedule-section">
         {schedule.map((event, index) => (
-          <article key={index} className="schedule-item">
+          <article key={index} className="schedule-item medieval-schedule-item">
             <img src={`/placeholder${index + 4}.jpg`} alt={event.title} />
             <div className="schedule-content">
               <time>{event.time}</time>
@@ -105,7 +105,7 @@ const Details = ({ countdownDays, countdownHours, countdownMinutes, countdownSec
         ))}
       </div>
 
-      <div className="venue-section">
+      <div className="medieval-frame venue-section">
         <p>Место проведения</p>
         <h3>Ресторан «Тулинов Дом»</h3>
         <p>Рамонь, Советская улица, 1</p>
@@ -113,7 +113,7 @@ const Details = ({ countdownDays, countdownHours, countdownMinutes, countdownSec
           href="https://yandex.ru/maps/?text=Ресторан%20Тулинов%20Дом%2C%20Рамонь%2C%20Советская%20улица%2C%201"
           target="_blank"
           rel="noopener noreferrer"
-          className="map-link"
+          className="map-link medieval-btn"
         >
           Открыть на карте →
         </a>

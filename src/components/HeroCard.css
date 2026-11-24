@@ -1,25 +1,230 @@
-.hero-card {
-  background: var(--block-color) ;
-  place-items: center;
-  width: 90%;
-  margin: 7vh auto 0;
-  display: grid;
+/* Медиевальный герб */
+.hero-monogram {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  opacity: 0.1;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.medieval-monogram {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.monogram-letter {
+  position: absolute;
+  font-family: var(--font-medieval);
+  font-size: 8rem;
+  font-weight: bold;
+  color: var(--medieval-brown);
+  text-shadow: 
+    0 0 20px rgba(185, 164, 92, 0.5),
+    3px 3px 0 var(--medieval-gold-dark);
+}
+
+.monogram-letter:nth-child(1) {
+  top: 20%;
+  left: 20%;
+  animation: float 6s ease-in-out infinite;
+}
+
+.monogram-letter:nth-child(2) {
+  font-size: 5rem;
+  color: var(--medieval-red);
+  z-index: 1;
+  text-shadow: 0 0 30px rgba(185, 164, 92, 0.8);
+}
+
+.monogram-letter:nth-child(3) {
+  bottom: 20%;
+  right: 20%;
+  animation: float 6s ease-in-out infinite reverse;
+}
+
+/* Основной контент */
+.hero-copy {
+  text-align: center;
+  z-index: 1;
+  padding: 40px;
+  background: rgba(245, 241, 232, 0.9);
+  border: 3px solid var(--medieval-gold);
+  box-shadow: 
+    0 0 0 4px var(--medieval-gold-dark),
+    0 20px 60px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.hero-copy::before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  border: 2px solid var(--medieval-red);
+  z-index: -1;
+}
+
+/* Бровь заголовка */
+.eyebrow {
+  font-family: var(--font-medieval);
+  font-size: 1.3rem;
+  color: var(--medieval-gold);
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  display: block;
+}
+
+/* Медиевальный заголовок */
+.medieval-title {
+  font-family: var(--font-medieval);
+  font-size: 5rem;
+  color: var(--medieval-brown);
+  line-height: 1.2;
+  margin-bottom: 30px;
+  text-shadow: 
+    2px 2px 4px rgba(185, 164, 92, 0.3),
+    0 0 30px rgba(185, 164, 92, 0.2);
+}
+
+.medieval-title span {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.medieval-title span:hover {
+  transform: scale(1.1) rotate(-2deg);
+}
+
+/* Медиевальный амперсанд */
+.medieval-ampersand {
+  font-family: var(--font-script);
+  font-size: 4rem;
+  color: var(--medieval-red);
+  margin: 0 15px;
+  display: inline-block;
+  animation: gold-shimmer 3s infinite linear;
+}
+
+/* Декоративный элемент */
+.flourish {
+  font-size: 2rem;
+  color: var(--medieval-gold);
+  margin: 20px 0;
+  opacity: 0.8;
+}
+
+.flourish-medieval {
+  animation: flourish-pulse 2s ease-in-out infinite;
+}
+
+@keyframes flourish-pulse {
+  0%, 100% { 
+    transform: scale(1) rotate(0deg);
+    opacity: 0.8;
+  }
+  50% { 
+    transform: scale(1.2) rotate(10deg);
+    opacity: 1;
+  }
+}
+
+/* Дата и день */
+.hero-date,
+.hero-day {
+  font-family: var(--font-medieval);
+  font-size: 1.5rem;
+  color: var(--medieval-brown);
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+/* Основная кнопка */
+.button-primary {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 18px 50px;
+  font-family: var(--font-medieval);
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--medieval-gold);
+  background: linear-gradient(180deg, var(--medieval-brown) 0%, var(--medieval-brown-dark) 100%);
+  border: 3px solid var(--medieval-gold);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  transition: all 0.4s ease;
+  box-shadow: 
+    0 6px 0 var(--medieval-brown-dark),
+    0 15px 30px rgba(0, 0, 0, 0.3);
+  position: relative;
   overflow: hidden;
 }
 
-.hero-card:before {
-  content: "";
-  z-index: 0;
-  opacity: 0.2;
-  mix-blend-mode: multiply;
-  pointer-events: none;
-  background: url(/paper-texture.svg) 0 0 / 270px 270px;
+.button-primary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(185, 164, 92, 0.3), transparent);
+  transition: left 0.5s ease;
 }
 
-/*.hero-card:after {
-  content: "";
-  pointer-events: none;
-  border: 1px solid #8466373d;
-  position: absolute;
-  inset: 3.2%;
-}*/
+.button-primary:hover::before {
+  left: 100%;
+}
+
+.button-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 
+    0 9px 0 var(--medieval-brown-dark),
+    0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.button-primary:active {
+  transform: translateY(3px);
+  box-shadow: 
+    0 3px 0 var(--medieval-brown-dark),
+    0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .hero-card {
+    padding: 20px;
+  }
+  
+  .medieval-title {
+    font-size: 3rem;
+  }
+  
+  .monogram-letter {
+    font-size: 5rem;
+  }
+  
+  .monogram-letter:nth-child(2) {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .medieval-title {
+    font-size: 2.5rem;
+  }
+  
+  .button-primary {
+    padding: 15px 30px;
+    font-size: 1.1rem;
+  }
+}

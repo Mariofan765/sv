@@ -94,3 +94,78 @@
     transform: translateY(-5px);
   }
 }
+
+/* Мобильная адаптация */
+@media (max-width: 768px) {
+    .hero {
+        min-height: auto;
+        padding: 100px 20px 60px;
+    }
+
+    .hero-intro {
+        padding: 30px 20px;
+    }
+
+    .hero-intro h1 {
+        font-size: 3rem;
+    }
+
+    .hero-intro h1 i {
+        margin: 0 5px;
+    }
+
+    .flourish {
+        font-size: 1.7rem;
+    }
+
+    .hero-date {
+        font-size: 1.5rem;
+    }
+
+    .hero-day {
+        font-size: 1rem;
+        letter-spacing: 2px;
+    }
+
+    .hero-button {
+        padding: 12px 30px;
+        font-size: 1rem;
+    }
+
+    .scroll-down {
+        bottom: 20px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 80px 15px 50px;
+    }
+
+    .hero-intro h1 {
+        font-size: 2.3rem;
+    }
+
+    .flourish {
+        font-size: 1.4rem;
+    }
+
+    .hero-date {
+        font-size: 1.3rem;
+    }
+
+    .hero-day {
+        font-size: 0.9rem;
+    }
+
+    .hero-button {
+        padding: 10px 25px;
+        font-size: 0.95rem;
+    }
+
+    .scroll-down {
+        bottom: 15px;
+        font-size: 0.85rem;
+    }
+}
